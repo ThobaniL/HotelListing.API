@@ -58,8 +58,6 @@ namespace HotelListing.API.Controllers
                 return BadRequest("Invalid Record Id!");
             }
 
-            //_context.Entry(country).State = EntityState.Modified;
-
             var country = await _countriesRepository.GetAsync(id);
 
             if (country == null)
