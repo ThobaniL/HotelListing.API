@@ -22,10 +22,10 @@ namespace HotelListing.API.Controllers
 
         // GET: api/Hotels
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<GetHotelDto>>> GetHotels()
+        public async Task<ActionResult<IEnumerable<HotelDto>>> GetHotels()
         {
             var records = await _hotelsRepository.GetAllAsync();
-            var hotels = _mapper.Map<List<GetHotelDto>>(records);
+            var hotels = _mapper.Map<List<HotelDto>>(records);
 
             return Ok(hotels);
         }

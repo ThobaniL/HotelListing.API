@@ -16,8 +16,6 @@ namespace HotelListing.API.Configurations
 
             CreateMap<Hotel, CreateHotelDto>().ReverseMap();
             CreateMap<Hotel, HotelDto>().ReverseMap();
-            CreateMap<Hotel, GetHotelDto>().ReverseMap();
-            CreateMap<Hotel, UpdateHotelDto>().ReverseMap();
         }
 
     }
