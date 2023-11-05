@@ -3,10 +3,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace HotelListing.API.Migrations
 {
     /// <inheritdoc />
-    public partial class AddedIdentityTables : Migration
+    public partial class AddedDefaultRoles : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -156,6 +158,15 @@ namespace HotelListing.API.Migrations
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[,]
+                {
+                    { "44e76be5-9ce9-49e5-8eba-f1e5aef2e80a", null, "Administrator", "ADMINISTRATOR" },
+                    { "7188a358-20f0-4758-945d-56ad201af58e", null, "User", "USER" }
                 });
 
             migrationBuilder.CreateIndex(

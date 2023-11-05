@@ -1,0 +1,8 @@
+POST https://localhost:7113/api/countries 
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0aG9iYW5pbEBob3RlbGFwaS5jb20iLCJqdGkiOiIxYzRlMjBiYi1jNmRhLTRlZGEtODhhZi01ODI1ODZmZjJkNzQiLCJlbWFpbCI6InRob2JhbmlsQGhvdGVsYXBpLmNvbSIsInVpZCI6ImIwNGE0MWE1LWUzNTYtNGVhMS05OGRhLTZiNTQ1Mjg4NDVjNiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJleHAiOjE2OTkxNzczNDYsImlzcyI6IkhvdGVsTGlzdGluZ0FQSSIsImF1ZCI6IkhvdGVsTGlzdGluZ0FQSUNsaWVudCJ9.Wt8vtLSxD40Um5WEx_xW_8tlUULDr1FkOB0DLMA4DIc
+Content-Type: application/json
+
+{
+  "name": "Zimbabwe",
+  "shortName": "ZM"
+}

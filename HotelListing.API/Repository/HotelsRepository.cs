@@ -10,7 +10,7 @@ namespace HotelListing.API.Repository
 
         public HotelsRepository(HotelListingDbContext context) : base(context)
         {
-            this._context = context;
+            _context = context;
         }
 
         public async Task<Hotel> GetHotelDetails(int id)

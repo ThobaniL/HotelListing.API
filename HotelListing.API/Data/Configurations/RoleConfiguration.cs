@@ -11,7 +11,7 @@ namespace HotelListing.API.Data.Configurations
             List<IdentityRole> roles = new List<IdentityRole>()
             {
                 new IdentityRole
-                {
+                { 
                     Name = "Administrator",
                     NormalizedName = "ADMINISTRATOR",
                 },
